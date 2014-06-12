@@ -8,6 +8,18 @@
 		</h1>
 		{{ article.content }}
 
+    <p>
+      <a href="http://twitter.com/home?status={{ SITEURL }}/{{ article.url }}">
+        Tweet this article
+      </a>
+      <br>
+      {% if article.ycombinatorid %}
+        <a href="http://news.ycombinator.com/item?id={{ article.ycombinatorid }}">
+          Discuss on HackerNews
+        </a>
+      {% endif %}
+    </p>
+
 		<div id="article_meta">
 			{% if not article.category == 'posts' %}
 				Category:
