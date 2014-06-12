@@ -8,6 +8,28 @@
 
 @accent:			@blue;
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), url(fonts/opensans/400.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), url(fonts/opensans/400i.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), url(fonts/opensans/700.woff) format('woff')
+}
+
+
 html {
 	min-height: 100%;
 	margin: 0;
@@ -107,7 +129,6 @@ section#sidebar {
 		display: block;
 		font-family: 'Proxima Nova', 'Open Sans', 'Lato', sans-serif;
 		font-weight: 900;
-		font-size: 34px;
 		line-height: 38px;
 		a {
 			border: none;
@@ -133,7 +154,7 @@ section#sidebar {
 
 	li {
 		margin: 0;
-		padding: 10px 0 20px;
+		padding: 5px 0 10px;
 
 		clear: both;
 		display: block;
@@ -143,9 +164,8 @@ section#sidebar {
 			color: @med-grey;
 			font-size: 15px;
 			line-height: 19px;
-			border: 2px solid @light-grey;
-			.border-radius(35px);
-			padding: 7px 15px;
+			border: none;
+			padding: 2px 15px;
 		}
 	}
 
@@ -278,17 +298,10 @@ section#posts {
 		border-bottom: @light-grey 1px solid;
 		font-color: @black;
 		font-weight: 300;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		text-size: 15px;
 		line-height: 33px;
 
-		h1 {
-			margin: 0;
-			padding: 0;
-			height: 0;
-			width: 0;
-			visibility: hidden;
-		}
 		h3 {
 			margin: 0;
 			padding: 0;
