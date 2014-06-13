@@ -27,8 +27,11 @@
 		</figure>
 
 		<div class="user_meta">
-            <h1 id="user"><a href="{{ SITEURL }}" class="">{{ AUTHOR }}</a></h1>
-			<h2>{{ TAGLINE }}</h2>
+      <h1 id="user"><a href="{{ SITEURL }}" class="">{{ SITENAME }}</a></h1>
+			<h2>by {{ AUTHOR }}</h2>
+			{% if TAGLINE %}
+			<p class="tagline">{{ TAGLINE }}</p>
+			{% endif %}
 			{% if AUTHOR_BIO %}
 			<p class="bio">{{ AUTHOR_BIO }}</p>
 			{% endif %}
