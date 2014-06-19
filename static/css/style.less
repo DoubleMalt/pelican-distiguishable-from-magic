@@ -484,11 +484,10 @@ section#posts {
 
 @media screen and (max-width: 700px){
   section#sidebar {
-    /*width: 0;
-    overflow: hidden;*/
     position: relative;
     min-height: 0;
     width: 100%;
+    z-index: 2;
 
     figure {
       display:none;
@@ -513,13 +512,18 @@ section#posts {
       }
       h1, h2 {
         padding-left: 15px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
+        line-height: 1.3em;
       }
     }
 
     footer {
       position: fixed;
-      bottom: 1em;
+      bottom: 0;
+      background-color: white;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      width: 100%;
     }
   }
   section#posts {
