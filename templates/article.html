@@ -10,12 +10,12 @@
 
     <p>
       <a href="http://twitter.com/home?status={{ SITEURL }}/{{ article.url }}">
-        Tweet this article
+        <i class="fa fa-twitter"></i> Tweet this article
       </a>
       <br>
       {% if article.ycombinatorid %}
         <a href="http://news.ycombinator.com/item?id={{ article.ycombinatorid }}">
-          Discuss on HackerNews
+          <i class="fa fa-hacker-news"></i> Discuss on HackerNews
         </a>
       {% endif %}
     </p>
